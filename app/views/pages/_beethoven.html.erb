@@ -1,0 +1,7 @@
+<% provide(:title, 'Beethoven') %>
+<% provide(:h3, 'Beethoven') %>
+<%= render 'Beethoven' %>
+<h3><%= h3(yield(:h3))%></h3>
+	<% Twitter.search("beethoven", lang: "en").results.each do |tweet| %>
+	<%= render 'showtweet' %>
+<% end %>

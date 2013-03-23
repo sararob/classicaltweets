@@ -1,0 +1,103 @@
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+@import "bootstrap";
+
+@import 'bootstrap-responsive';
+
+.footer {
+	margin-left:15px;
+}
+
+.tweetfilter {
+	font-size:110%;
+	display:inline;
+	a {
+		text-decoration:none;
+		&:hover {
+			color:#162252;
+		}
+	}
+}
+
+.composer-filter li {
+	display:inline;
+}
+
+.tweet {
+	margin-left:10px;
+	padding:7px;
+	border-radius:4px;
+	display:inline-block;
+	width:350px;
+	box-shadow:3px 3px 3px #888;
+	background-color:white;
+}
+
+.ago {
+	font-style:italic;
+}
+
+.tweet img {
+	border:1px solid black;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+	border-radius:3px;
+}
+
+h3, .tweetfilter {
+	margin-left:10px;
+}
+
+.tweet-btn {
+	margin-top:8px;
+}
+
+a {
+	color:#00008b;
+}
+
+.tweetfilter {
+	font-size:110%;
+	display:inline;
+	a {
+		text-decoration:none;
+		&:hover {
+			color:#162252;
+		}
+	}
+}
+
+.foot-bottom li {
+	display:inline;
+	text-align:center;
+	padding:11px;
+}
+
+/* About Page */
+
+.page {
+	max-width: 1060px;
+	padding:3em 2em;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.page-section {
+	display:block;
+}
+
+.page-section-header {
+	margin-bottom:1em;
+	text-align:center;
+}
+
+.page-content {
+	padding:1.65em 2em 2em;
+	background-color:white;
+	border-radius:5px;
+	a {
+		color:#7eb6ff;
+	}
+}

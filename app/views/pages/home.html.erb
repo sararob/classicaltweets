@@ -1,0 +1,5 @@
+<%= render 'filter' %>
+<h3>Showing all ClassicalTweets</h3>
+<% Twitter.search("mozart OR beethoven OR bach OR brahms OR handel OR tchaikovsky OR stravinsky", lang: "en", count:30).results.each do |tweet| %>
+	<%= render 'showtweet' %>
+<% end %>
