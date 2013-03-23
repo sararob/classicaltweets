@@ -1,7 +1,0 @@
-<% provide(:title, 'Tchaikovsky') %>
-<% provide(:h3, 'Tchaikovsky') %>
-<%= render 'filter' %>
-<h3><%= h3(yield(:h3))%></h3>
-	<% Twitter.search("tchaikovsky", lang: "en").results.each do |tweet| %>
-	<%= render 'showtweet' %>
-<% end %>

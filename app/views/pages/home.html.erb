@@ -1,5 +1,13 @@
 <%= render 'filter' %>
 <h3>Showing all ClassicalTweets</h3>
-<% Twitter.search("mozart OR beethoven OR bach OR brahms OR handel OR tchaikovsky OR stravinsky", lang: "en", count:30).results.each do |tweet| %>
-	<%= render 'showtweet' %>
+<% Twitter.search("mozart OR beethoven OR bach OR brahms OR #handel OR tchaikovsky OR stravinsky", lang: "en", count:30).results.each do |tweet| %>
+	<div class="tweet">
+		<% displayname = "@" + tweet.user.screen_name %>
+		<% tweetlink = "https://twitter.com/" + tweet.user.screen_name + "/status/" + tweet.id.to_s %>
+		<% userlink = "https://twitter.com/" + tweet.user.screen_name %>
+		<p><%= image_tag(tweet.profile_image_url) %><%= link_to(tweet.text, tweetlink, :target => "_blank") %></p>
+		<p class="ago"><%= time_ago_in_words(tweet.created_at) %> ago.</p> 
+		<div class="from">&mdash; <%= link_to(displayname, userlink, :target => "_blank") %></div>
+		</div>
+	<br><br>
 <% end %>

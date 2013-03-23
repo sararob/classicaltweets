@@ -11,6 +11,7 @@ Classicaltweets::Application.routes.draw do
   get "stravinsky" => "pages#stravinsky"
   get "handel" => "pages#handel"
   get "tchaikovsky" => "pages#tchaikovsky"
+  get "wfmt" => "pages#wfmt"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

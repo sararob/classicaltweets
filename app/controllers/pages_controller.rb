@@ -25,4 +25,7 @@ class PagesController < ApplicationController
   
   def tchaikovsky
   end
+  
+  def wfmt
+  end
 end

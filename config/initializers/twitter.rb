@@ -1,8 +1,8 @@
 Twitter.configure do |config|
-  config.consumer_key = "gDHasQz71uSVtHt1qUo5xA"
-  config.consumer_secret = "MP7ZDVkas06rx9kWacRB1ZgkBRPOA2A51CVVxSstA90"
-  config.oauth_token = "332018940-Syci2PwO9Z4P2F8IQjg1CnyLsfqizQfyJBQgkXXz"
-  config.oauth_token_secret = "ykpePgMsVpsHSAlmB7haGemwIFlj39jIFH79tPjhU"
+  config.consumer_key = "Bj6KHLuHy8Z7sPqqMxgfBA"
+  config.consumer_secret = "fg1owHOGFbtYpa75ObSt2U0rMPtZr9ls4fbr7NOI"
+  config.oauth_token = "332018940-rmtIzqccdIgQhQH8kcAG7SOROb5aUbXUpkpJq3Su"
+  config.oauth_token_secret = "Tj3iGznqJTvPBl6cFqTPneu6ZlyCu3mFmexGMk8"
 end
 
 middleware = Proc.new do |builder|
